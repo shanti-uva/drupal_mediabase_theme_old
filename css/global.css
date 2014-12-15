@@ -1,0 +1,569 @@
+/* This file will hold the main styles for your website. */
+   
+/* Typography */
+body {
+   font-family: Baskerville, Georgia, Palatino, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+   font-size: 100%;
+}
+h1, h2.site-name {
+   font-family: Baskerville, Georgia, Palatino, 'Palatino Linotype', 'Book Antiqua', 'URW Palladio L', serif;
+}
+h2, h3, h4, h5, h6,  
+.field-label, .fieldset-title,
+#zone-menu a {
+   font-family:Helvetica,Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+}
+.form-text {
+   font-family:Arial,Helvetica,Verdana,"Bitstream Vera Sans",sans-serif;
+}
+#zone-branding-wrapper, #zone-user-wrapper {
+   background-color: #244555;
+   color: #fff;
+}
+.logo-img {
+   /* margin-top: 16px; */
+}
+.site-name a {
+   color: white;
+}
+.site-name {
+   margin-top: 4px; /* default is 20 */
+}
+.site-name-slogan {
+   padding-bottom: 20px;
+}
+#zone-menu-wrapper {
+   background-color: #888;
+   color: #fff;
+}
+#zone-menu ul {
+   display: block;
+   float: left;
+   margin-bottom: 0;
+}
+#zone-menu li {
+   display: inline-block;
+   /*  padding: 10px; SEE NICE MENUS BELOW -TWM */
+}
+#zone-menu a, #zone-user a {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+}
+#zone-menu .active {
+   /* background-color: #ddd; SEE NICE MENUS BELOW -TWM
+   color: #464646; */
+}
+
+/* USER BLOCK INLINE WITH PIPE SEPARATOR */
+#zone-user {
+   height: 10px;
+}
+#block-system-user-menu {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
+#zone-user ul {
+   list-style-type: none;
+   float: right;
+}
+#zone-user li {
+   display: inline;
+   padding-right: 0;
+   margin-left: 0;
+}
+#zone-user .menu .first:after {
+   content: " | ";
+}
+
+/* SEARCH BLOCK */
+#search-block-form { }
+
+/* FIELDSETS swiped from Seven theme*/
+fieldset {
+   border: 1px solid #ccc;
+   padding: 2.5em 0 0 0; /* LTR */
+   position: relative;
+   margin: 1em 0;
+}
+fieldset .fieldset-legend {
+   margin-top: 0.5em;
+   padding-left: 15px; /* LTR */
+   position: absolute;
+   text-transform: uppercase;
+}
+fieldset .fieldset-wrapper {
+   padding: 0 13px 13px 15px; /* LTR */
+}
+fieldset.collapsed {
+   background-color: transparent;
+}
+html.js fieldset.collapsed {
+   border-width: 1px;
+   height: auto;
+}
+fieldset fieldset {
+   background-color: #fff;
+}
+fieldset fieldset fieldset {
+   background-color: #f8f8f8;
+}
+
+/* FIELD COLLECTIONS */
+.field-type-field-collection {   
+   padding-bottom: 9px;
+}
+
+.field-type-field-collection div {
+   margin-bottom: 0;
+   padding-bottom: 0;
+   margin-top: 0;
+   padding-top: 0;
+}
+
+/* BLOCKS */
+#section-header {
+   margin-bottom: 10px;
+}
+.region-inner .block {
+   margin-bottom: 12px;
+}
+
+/* SPECIFIC ELEMENTS */
+.kmap-selector label {
+   display: inline;
+}
+.kmap-selector-item img {
+   position: relative;
+   top: -3px !important;
+}
+
+.alpha-resize-indicator {
+   display: none;
+}
+
+/* Floating Thumbnail views */
+.views-field-field-video {
+   float: left;
+   padding-right: 10px;
+}
+.views-field-title a:link,
+.views-field-group-audience a:link {
+   text-decoration:none;
+}
+.views-field-title a:hover,
+.views-field-group-audience a:hover {
+   text-decoration:underline;
+}
+.views-field-group-audience span {
+   display:block;
+   float: left;
+   padding-right: 1ex;
+}
+
+/* HOMEPAGE */
+.front .title {
+   display:none;
+}
+
+/* NODES */
+div.mb-identifier label {
+   float:left;
+   padding-right: .5em;
+}
+
+/* Override the rule in kaltura.css which breaks in mb-html5 theme */
+input.remove_media {
+   background: url('../../../../all/modules/mediabase/images/close.png') no-repeat -2px -1px; 
+   /* background-image property is overridden in mb-kaltura.js just in case the location of mediabase module is different */
+   background-size: 20px 20px;
+   border: none;
+   border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+}
+
+/* MEDIA DETAIL VIEW */
+.field-name-field-pbcore-description .field-item {
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+/* LOGIN LINK */
+#shib_login_url a {
+   float:right;
+}
+
+/* NICE MENUS */
+.block-nice-menus-1 {
+   margin-bottom: 0 !important;
+}
+#nice-menu-1 li {
+   border-width: 0;
+   background-color: transparent;
+   padding: 0;
+   margin: 0;
+}
+#nice-menu-1 li a {
+   padding: 10px;
+}
+#nice-menu-1 li a:hover {
+   text-decoration: underline;
+   background-color: #999;
+}
+#nice-menu-1 li a.active:hover {
+   text-decoration: none;
+}
+#nice-menu-1 li a.active {
+   background-color: #ddd;
+   color: #464646;
+}
+#nice-menu-1 li.menuparent,
+#nice-menu-1 li li.menuparent {
+   background-image: none !important;
+}
+#nice-menu-1 li.menuparent li {
+   background-color: #888;
+   width: 200px;
+}
+#nice-menu-1 li.menuparent li a {
+   display: inline-block;
+   width: 180px;
+}
+#nice-menu-1 li.menuparent ul {
+   border: 0;
+   padding-top: 10px;
+}
+
+/* CUSTOM SEARCH */
+.custom_search-popup {
+   background-color: orange;
+   z-index: 1000000;
+}
+
+/* MEDIA THUMBNAIL GRIDS */
+.mb-thumbnail-grid-row {
+   width: 142px !important;
+   height: 190px !important;
+   display: inline-block;
+   float: left;
+   padding: 10px;
+   margin: 0 10px 10px 0 !important;
+   border: solid 1px #eee;
+   overflow: hidden;
+}
+.mb-thumbnail-grid-row .views-field-field-video .kaltura-thumb,
+.mb-thumbnail-grid-row .views-field-field-audio .kaltura-thumb {
+   height: 80px;
+   overflow: hidden;
+}
+.mb-thumbnail-grid-row .views-field-field-audio img {
+   position: relative;
+   top: -12px;
+}
+
+.mb-thumbnail-grid-row:hover {
+   background-color: #eee;
+   border-color: #ddd;
+}
+.mb-thumbnail-grid-row .play-icon-overlay {
+   display:none;
+}
+.mb-thumbnail-grid-row:hover .play-icon-overlay {
+   display: block;
+   position: absolute;
+   z-index: 100000;
+   top: 10px;
+   height: 80px;
+   width: 142px;
+   cursor: pointer;
+   background: url(../images/play-icon.png) center center no-repeat;
+}
+.mb-thumbnail-grid-row:hover .views-field-field-audio img {
+   display:none; /* hide the image since it's right underneath the play-icon overlay play button */
+}
+.mb-thumbnail-grid-row:hover .views-field-field-audio .kaltura-thumb {
+   background-color: black;
+}
+
+.mb-thumbnail-grid-row .views-field-title {
+   clear: left;
+   padding-top: 1ex;
+   padding-bottom: 2ex;
+   font-size: 80%;
+}
+.mb-thumbnail-grid-row .views-field-created,
+.mb-thumbnail-grid-row .views-field-realname,
+.mb-thumbnail-grid-row .views-field-group-audience {
+  display:none;
+   font-size: 80%;
+   clear: left;
+}
+.mb-thumbnail-grid-row:hover .views-field-created,
+.mb-thumbnail-grid-row:hover .views-field-realname,
+.mb-thumbnail-grid-row:hover .views-field-group-audience {
+   display: block;
+}
+
+.view-recent-media .more-link {
+   clear: left;
+}
+
+/* Views Filters - workflow */
+.view-my-workflow .views-exposed-widget {
+   width: 100% !important;
+   clear: left;
+}
+.view-my-workflow .views-exposed-widget  label,
+.view-my-workflow .views-exposed-widget  .views-widget {
+   float: left;
+   clear: none;
+   padding-right: 1em;
+}
+.view-my-workflow .views-reset-button,
+.view-my-workflow .views-submit-button
+{
+   width: auto !important;
+   clear: none;
+   padding-top: 0;
+}
+.view-my-workflow .views-exposed-widget {
+      width: 100% !important;
+}
+
+/*  COLLECTIONS - views collection (collections list page)*/
+.view-collections .views-row {
+  clear: both;
+}
+
+#mb-solr-collection-content {
+  clear: both;
+  padding-top: 0.8em;
+}
+
+#mb_solr_items ul {
+  margin-left: 1em;
+  list-style-type: circle;
+}
+
+/* FOOTERS */
+#section-footer {
+   background-color: #ddd;
+   padding-top: 1ex;
+   border-top: solid 1px silver;
+}
+
+/* FLAGS & LINKS */
+.flag-message {
+   top:0;
+}
+.links li {
+   float: left;
+   clear: left;
+}
+
+/* SEARCH TOGGLE */
+#region-menu {
+   position: relative;
+   z-index: 2;
+}
+#admin-menu-wrapper {
+   z-index: 3; /* keep admin menu on top of region menu */
+}
+
+#zone-menu-wrapper div {
+   height: 38px; /* this is needed since we set the main menu and search form to inline-block, it messed up the height of the menu bar */
+}
+#region-menu #block-transcripts-transcript-search,
+#region-menu #block-search-form {
+   display: none;
+   float: right;
+   padding-top: 4px;
+   margin-bottom: 0;
+}
+#region-menu #block-transcripts-transcript-search.active,
+#region-menu #block-search-form.active {
+   display: inline-block;
+}
+
+#region-menu #edit-submit {
+   margin-right: 0;
+}
+#region-menu #block-nice-menus-1 {
+   display: inline-block;
+}
+#region-menu .contextual-links-wrapper {
+   display: none;
+}
+#region-menu  input[type=text] {
+   width: 135px;
+}
+/* search toggle box */
+.search-toggle-box { 
+   display:none;
+   position: relative;
+   top: -4px;
+   height: 4em;
+   background-color: #888;
+   color: #eee;
+   padding: 9px 9px 9px 9px;
+   padding-top: 0;
+}
+.search-toggle-box.visible {
+   display: block;
+}
+.close-toggle-box {
+   float: right;
+   font-size: 80%;
+}
+.search-toggle-box label {
+   padding-left: 4px;
+   font-weight: normal;
+   display: inline;
+}
+/* Collection Listing View */
+.view-collections  .views-field-title {
+   margin-top: 1.5em;
+}
+.view-collections  .views-field-body {
+   font-size: 90%;
+   margin: .25em 1em 0 1em;
+}
+
+/* Collection Home */
+.node-type-collection .field-name-field-images,
+.view-collections .views-field-field-images {
+   float: left;
+   padding: 2px;
+   border: solid 1px #DDD;
+   margin-right: 10px;
+}
+form .field-name-field-images {
+   float: none !important;
+}
+
+/* Add Mdia Button/Link */
+#edit-field-video-und-0-button a,
+#edit-field-audio-und-0-button a{
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color:#ffc477;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color:#ffffff !important;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #cc9f52;
+}
+#edit-field-video-und-0-button a:hover,
+#edit-field-audio-und-0-button a:hover {
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+	background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background-color:#fb9e25;
+		color:#ffffff !important;
+
+}
+#edit-field-video-und-0-button a:active,
+#edit-field-audio-und-0-button a:active {
+	position:relative;
+	top:1px;
+}
+#edit-field-video-und-0-button a.hidden,
+#edit-field-audio-und-0-button a.hidden {
+   display: none;
+}
+
+/* Tags */
+.field-name-field-tags .field-item a {
+	background-color:#9dce2c;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:14px;
+	font-weight:normal;
+	padding:2px 10px;
+	margin-right: 4px;
+	text-decoration:none;
+}
+
+.field-name-field-tags .field-item a:hover {
+	background-color:#8cb82b;
+}
+
+.field-name-field-tags .field-item a:active {
+	position:relative;
+	top:1px;
+}
+
+  /* Hanging first line for subcollection and subject kmap fields */
+.field-name-field-subcollection .field-type-taxonomy-term-reference .field-item, 
+.field-name-field-characteristic .field-type-taxonomy-term-reference .field-item,
+.field-name-field-pbcore-coverage-spatial.field-type-taxonomy-term-reference .field-item {
+  text-indent: -18px;
+  margin-left: 18px;
+}
+
+/* Kmap Filter */
+.bef-tree, .bef-tree-child  {
+   list-style-type: none;
+}
+
+.bef-tree-child {
+   margin-left: 10px;
+}
+
+a.facetapi-active {
+  background-color: #F8F798;
+}
+
+/* Pagerer Pager */
+
+table.pagerer {
+	clear: both;
+	border: none;
+}
+
+table.pagerer ul.pager {
+	border: none;
+	background: none;
+	margin: 0 120px 0 160px;
+}
+
+table.pagerer ul.pager li {
+	float: left;
+	background: none !important;
+	border: none !important;
+	white-space: nowrap !important;
+}
+
+table.pagerer ul.pager li.pager-previous {
+	padding-right: 33% !important;
+}
+
+table.pagerer ul.pager li a {
+	background: none !important;
+	border: none !important;
+}
+
+input.pagerer-page {
+	height: 1.5em;
+    margin-top: -3px;
+    vertical-align: text-top;
+    width: 3em !important;
+}
